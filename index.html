@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="지금까지 만든 웹 프로젝트들을 한 곳에서 실행하는 반응형 프로젝트 허브"
+    />
+    <title>RYU Project Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__copy">
+          <p class="eyebrow">2028 Project Portal</p>
+          <h1 id="page-title">만든 것들을 한 화면에서 바로 실행</h1>
+          <p class="lede">
+            버튼 하나로 각 웹페이지를 열고, 이후에는 데이터 파일 하나만 고쳐서
+            프로젝트를 추가하거나 주소를 바꿀 수 있습니다.
+          </p>
+        </div>
+        <div class="hero__panel" aria-label="프로젝트 현황">
+          <span class="metric">
+            <strong id="project-count">0</strong>
+            <small>Projects</small>
+          </span>
+          <span class="metric">
+            <strong>1</strong>
+            <small>Config file</small>
+          </span>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="프로젝트 찾기와 필터">
+        <label class="search">
+          <span class="visually-hidden">프로젝트 검색</span>
+          <input id="search-input" type="search" placeholder="프로젝트 이름 검색" />
+        </label>
+        <div id="category-filters" class="filters" aria-label="분류 필터"></div>
+      </section>
+
+      <section id="project-grid" class="project-grid" aria-live="polite"></section>
+    </main>
+
+    <template id="project-card-template">
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__index"></span>
+          <span class="project-card__category"></span>
+        </div>
+        <h2></h2>
+        <p></p>
+        <a class="project-card__button" target="_blank" rel="noopener">열기</a>
+      </article>
+    </template>
+
+    <script src="./data/projects.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
