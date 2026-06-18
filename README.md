@@ -1,4 +1,4 @@
-# RYU Project Hub
+# tonghap
 
 지금까지 만든 웹페이지를 하나의 랜딩 페이지에서 여는 정적 프로젝트 허브입니다.
 
@@ -12,7 +12,7 @@
 - `url`: 밖에서도 접속 가능한 공개 주소
 - `localPath`: 내 컴퓨터에서 미리보기용으로 여는 파일 경로
 
-밖에서도 누구나 접속하게 만들려면 각 프로젝트를 Netlify, Vercel, GitHub Pages 등에 올린 뒤 `url`에 공개 주소를 넣으면 됩니다. `url`이 비어 있으면 현재 컴퓨터의 `localPath`를 사용합니다.
+밖에서도 누구나 접속하게 만들려면 각 프로젝트를 Netlify, Vercel, GitHub Pages, Render 등에 올린 뒤 `url`에 공개 주소를 넣으면 됩니다. `url`이 비어 있으면 현재 컴퓨터의 `localPath`를 사용합니다.
 
 ## 배포
 
